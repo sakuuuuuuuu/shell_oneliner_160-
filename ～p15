@@ -2,3 +2,31 @@
 　　　$ nautilus 
       GUIでファイルの操作ができるコマンド
 
+　　　CLIではmkdirコマンドなどで操作する
+　　　　　　　rmdir
+             pwd   カレントディレクトリ表示
+　　　　　　　cd ..　1つ上のディレクトリに移動
+
+
+練習1.2.f　パーミッション
+
+　　　chmod -w a       aファイルの書き込みの権限をなくす
+
+　　　答え　　chmod +r a
+             chmod +w a
+
+
+             whoami  　自分のユーザーの確認
+　　　　　　　
+
+
+　# 　練習
+  # rennsyyu
+  #  rennsyuu
+  ♯　れんしゅう
+　#　練習
+　#　練習　
+　#　練習
+　　＃　練習
+
+　# 　練習
