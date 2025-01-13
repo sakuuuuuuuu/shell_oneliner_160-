@@ -1,0 +1,35 @@
+
+
+　　##問題2 画像ファイルの一括変換
+    png形式の画像をconvertですべてJPEG形式に変換
+
+    $ convert 10_black.png 10_black.jpg
+    $ file 10_black.jpg 
+    $ la *.png | sed 's/\.png$//' xargs -I@ convert @.ong @.jpg
+    $ ls *.jpg
+    $ time ls *.png | sed 's./\.png$//' | xargs -I@ ck convert @.png @.jpg
+    $ tie ls *.png | sed 's/\.png$//' |xargs -P2 -I@ convert @.png @.jpg
+
+       拡張子がsedで除去されたファイル名はxargs -Iで@の中に１つずつ」入れられ　
+       xargsで指定されたコマンドconvert @.png @.jpgで処理される
+
+
+       ##問題３　ファイル名の一括変更
+
+       $ time ls -U | xargs -P2 rename 's/^/0000000/;s/0*([0-9]{7})/$1/'
+       $ ls -U |xargs -P rm
+
+       
+
+       
+
+
+      
+       
+    
+
+    
+   
+
+  
+ 
