@@ -1,0 +1,30 @@
+  ##問題４
+
+  $ mkdir ./tmp
+  $ cd ./tmp
+  $ seq 1000000 | sed 's/^/echo $RANDOM > /' | bash
+
+  $ grep -l '^10$' -R 
+
+  $ grep -l '^10$' -R | xargs rm
+
+
+  ##問題5
+
+  $cat ntp.conf | awk '$1=="pool"'
+
+  $cat ntp.conf | awk '$1=="pool"' | awk '{print $2}'
+
+
+  ##問題6
+
+  $ seq 5 |awk '{for(i=1;i<$1;i++){printf " "};print "X"}' | tac
+
+               seq: 1~5まで数字を出力
+               awk:  その数字だけ半角スペースを出力
+               tac:　出力をひっくり返す
+  
+  
+
+
+  
